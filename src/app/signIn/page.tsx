@@ -27,7 +27,7 @@ function SignIn() {
                 setError(firebaseError.message || 'Unknown Error');
             } else {
                 console.log(result);
-                router.push("/");
+                router.push("/dashboard");
             }
         } catch (error) {
             console.error('Error:', error);
